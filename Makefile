@@ -42,6 +42,9 @@ test_debounce:
 show_%: %.vcd %.gtkw
 	gtkwave $^
 
+elaborate_pwm: 
+	sbt --supershell=never "runMain ice.PwmCore"
+
 # FPGA recipes
 
 show_synth_%: src/%.v

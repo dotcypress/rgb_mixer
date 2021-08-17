@@ -4,3 +4,8 @@
 __pycache__
 sim_build
 results.xml
+target/
+project/**
+!project/build.properties
+.bloop
+.metals
